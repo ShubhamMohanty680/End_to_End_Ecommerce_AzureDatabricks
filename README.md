@@ -11,7 +11,7 @@ It showcases how raw data is ingested, transformed, and served for analytics usi
 ## 🏗 Architecture Overview
 
 The platform follows a **layered Medallion Architecture**:
-
+```mermaid
 graph TD
     %% Define Styles
     classDef source fill:#f9f,stroke:#333,stroke-width:2px;
@@ -27,7 +27,8 @@ graph TD
     L2 --> B[Bronze Layer: Raw Delta]:::bronze
     B --> Si[Silver Layer: Cleaned & Transformed]:::silver
     Si --> G[Gold Layer: Analytics-Ready]:::gold
-    G --> V{Analytics & Dashboards}:::viz 
+    G --> V{Analytics & Dashboards}:::viz
+```
 ---
 
 ## 🔹 Data Flow Explanation
