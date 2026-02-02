@@ -27,9 +27,7 @@ graph TD
     L2 --> B[Bronze Layer: Raw Delta]:::bronze
     B --> Si[Silver Layer: Cleaned & Transformed]:::silver
     Si --> G[Gold Layer: Analytics-Ready]:::gold
-    G --> V{Analytics & Dashboards}:::viz
-
-    
+    G --> V{Analytics & Dashboards}:::viz 
 ---
 
 ## 🔹 Data Flow Explanation
