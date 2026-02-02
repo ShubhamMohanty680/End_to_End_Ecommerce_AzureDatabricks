@@ -13,13 +13,13 @@ It showcases how raw data is ingested, transformed, and served for analytics usi
 The platform follows a **layered Medallion Architecture**:
 ```mermaid
 graph TD
-    %% Define Styles
-    classDef source fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef landing fill:#fff4dd,stroke:#d4a017,stroke-width:2px;
-    classDef bronze fill:#cd7f32,stroke:#333,stroke-width:2px,color:#fff;
-    classDef silver fill:#c0c0c0,stroke:#333,stroke-width:2px;
-    classDef gold fill:#ffd700,stroke:#333,stroke-width:2px;
-    classDef viz fill:#85C1E9,stroke:#333,stroke-width:2px;
+    %% Define Styles with Black Text
+    classDef source fill:#FFD1DC,stroke:#333,stroke-width:2px,color:#000;
+    classDef landing fill:#FFFACD,stroke:#d4a017,stroke-width:2px,color:#000;
+    classDef bronze fill:#E6CCB2,stroke:#333,stroke-width:2px,color:#000;
+    classDef silver fill:#E5E4E2,stroke:#333,stroke-width:2px,color:#000;
+    classDef gold fill:#FFD700,stroke:#333,stroke-width:2px,color:#000;
+    classDef viz fill:#D6EAF8,stroke:#333,stroke-width:2px,color:#000;
 
     %% Pipeline Flow
     S[(Source CSV Files)]:::source --> L1[Landing Zone 1: Raw CSV]:::landing
